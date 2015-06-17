@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize">
+
+        </android.support.v7.widget.Toolbar>
+
+        <EditText
+            android:id="@+id/country_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginRight="10dp"
+            android:focusable="false"
+            android:inputType="none"
+            android:singleLine="true"
+            android:text="Russia"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/country_code"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/country_name"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:inputType="phone"
+            android:singleLine="true"
+            android:text="+7"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/country_name"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_toEndOf="@+id/country_code"
+            android:layout_toRightOf="@+id/country_code"
+            android:hint="@string/phone_number"
+            android:inputType="phone"
+            android:singleLine="true"
+            android:textColorHint="@color/hint_color"
+            android:textSize="20sp">
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/information_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/country_code"
+            android:layout_alignStart="@+id/country_code"
+            android:layout_below="@+id/phone_number"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/list_of_chats_text"
+            android:text="@string/information_message" />
+
+    </RelativeLayout>
+
+
+
+    <ProgressBar
+        android:id="@+id/progress_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:indeterminate="true"
+        android:visibility="gone" />
+</RelativeLayout>

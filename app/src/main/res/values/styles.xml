@@ -1,0 +1,20 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/chat_menu_background</item>
+        <item name="colorPrimaryDark">@color/chat_menu_background</item>
+        <item name="colorAccent">@color/chat_menu_background</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="actionBarStyle">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+        <item name="actionOverflowButtonStyle">@style/OverFlow</item>
+    </style>
+
+    <style name="OverFlow" parent="@style/Widget.AppCompat.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_more</item>
+        <item name="android:textColor">@color/chat_message</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+</resources>

@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ImageViewActivity">
+
+    <item
+        android:id="@+id/save_to_gallery"
+        android:orderInCategory="101"
+        android:title="@string/save_to_gallery"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/delete"
+        android:orderInCategory="102"
+        android:title="@string/delete"
+        app:showAsAction="never" />
+</menu>

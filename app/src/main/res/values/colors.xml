@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_name">#222222</color>
+    <color name="color_message">#AEAEAE</color>
+    <color name="color_time">#999999</color>
+    <color name="color_conversations_devider">#ffdbdbdb</color>
+    <color name="color_short_name">#FFFFFF</color>
+    <color name="color_error_message">#DB7777</color>
+    <color name="chat_menu_background">#5B95C2</color>
+    <color name="drawer_text">#444444</color>
+    <color name="country">#212121</color>
+    <color name="letter">#808080</color>
+    <color name="country_code">#2F8CC9</color>
+    <color name="chat_user_name">#569ACE</color>
+    <color name="chat_timestamp">#B2B2B2</color>
+    <color name="chat_message">#333333</color>
+    <color name="chat_divider">#EDEDED</color>
+    <color name="chat_extre_text">#212121</color>
+    <color name="chat_header_second_line">#d2eafc</color>
+    <color name="chat_no_message_placeholder">#999999</color>
+    <color name="list_of_chats_text">#8a8a8a</color>
+    <color name="chat_new_mssages_panel">#579bcf</color>
+    <color name="hint_color">#BFBFBF</color>
+    <color name="background_blue">#68ADE1</color>
+    <color name="audio_duration">#68ADE1</color>
+    <color name="unread_msg">#EBF2F7</color>
+</resources>

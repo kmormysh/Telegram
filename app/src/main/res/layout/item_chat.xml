@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="5dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp">
+
+    <FrameLayout
+        android:id="@+id/extra_text"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/extra_text"
+        android:src="@drawable/test_avatar" />
+
+    <TextView
+        android:id="@+id/short_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/avatar"
+        android:layout_alignEnd="@id/avatar"
+        android:layout_alignLeft="@+id/avatar"
+        android:layout_alignRight="@+id/avatar"
+        android:layout_alignStart="@id/avatar"
+        android:layout_alignTop="@+id/avatar"
+        android:layout_below="@id/extra_text"
+        android:gravity="center"
+        android:text="SS"
+        android:textColor="@color/color_short_name"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/extra_text"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/avatar"
+        android:layout_toRightOf="@id/avatar"
+        android:fontFamily="sans-serif"
+        android:text="User Name"
+        android:textColor="@color/chat_user_name"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/extra_text"
+        android:layout_marginLeft="7dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="2dp"
+        android:layout_toEndOf="@id/user_name"
+        android:layout_toRightOf="@id/user_name"
+        android:fontFamily="sans-serif"
+        android:text="2:09 AM"
+        android:textColor="@color/chat_timestamp"
+        android:textSize="13sp"
+        android:textStyle="normal" />
+
+    <ImageView
+        android:id="@+id/message_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/extra_text"
+        android:src="@drawable/ic_clock"
+        android:visibility="gone"/>
+
+    <FrameLayout
+        android:id="@+id/message_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@id/avatar"
+        android:layout_toRightOf="@id/avatar" />
+</RelativeLayout>

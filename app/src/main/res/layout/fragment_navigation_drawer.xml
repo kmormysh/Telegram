@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".NavigationDrawerFragment">
+
+    <ImageView
+        android:id="@+id/chat_background"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:src="@color/chat_menu_background" />
+
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/test_avatar" />
+
+    <TextView
+        android:id="@+id/short_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/avatar"
+        android:layout_alignLeft="@id/avatar"
+        android:layout_alignRight="@id/avatar"
+        android:layout_alignTop="@id/avatar"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/avatar"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="sans-serif"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/user_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_name"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:fontFamily="sans-serif"
+        android:textColor="@android:color/white"
+        android:textSize="13sp"
+        android:textStyle="normal" />
+
+    <ImageView
+        android:id="@+id/logout_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chat_background"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="14dp"
+        android:src="@drawable/ic_logout" />
+
+    <TextView
+        android:id="@+id/logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chat_background"
+        android:layout_marginLeft="35dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="13dp"
+        android:layout_toRightOf="@+id/logout_image"
+        android:text="@string/log_out"
+        android:textColor="@color/drawer_text"
+        android:padding="5dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="@android:color/white"
+    android:paddingBottom="20dp">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/choose_photo"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:scrollbars="vertical" />
+
+    <ImageView
+        android:id="@+id/image_take_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/choose_photo"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_attach_photo" />
+
+    <TextView
+        android:id="@+id/take_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/image_take_photo"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/image_take_photo"
+        android:layout_toRightOf="@+id/image_take_photo"
+        android:padding="5dp"
+        android:text="@string/take_photo" />
+
+    <ImageView
+        android:id="@+id/image_gallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_take_photo"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_attach_gallery" />
+
+    <TextView
+        android:id="@+id/choose_from_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/image_gallery"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/image_gallery"
+        android:layout_toRightOf="@+id/image_gallery"
+        android:padding="5dp"
+        android:text="@string/choose_from_gallery" />
+
+</RelativeLayout>

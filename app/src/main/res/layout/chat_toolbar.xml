@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/test_avatar" />
+
+    <TextView
+        android:id="@+id/short_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/avatar"
+        android:layout_alignEnd="@id/avatar"
+        android:layout_alignLeft="@id/avatar"
+        android:layout_alignRight="@id/avatar"
+        android:layout_alignStart="@id/avatar"
+        android:layout_alignTop="@id/avatar"
+        android:gravity="center"
+        android:text="RN"
+        android:textSize="18sp"
+        android:textColor="@color/color_short_name" />
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/avatar"
+        android:layout_toRightOf="@id/avatar"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/color_short_name"
+        android:text="Bebop Crew" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/avatar"
+        android:layout_toRightOf="@id/avatar"
+        android:textColor="@color/chat_header_second_line"
+        android:textSize="14sp"
+        android:fontFamily="sans-serif"
+        android:text="5 members, 4 online" />
+
+</RelativeLayout>

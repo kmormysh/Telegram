@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:indeterminate="false"
+        android:max="100"
+        android:progressDrawable="@drawable/circular_progress_bar_blue" />
+
+    <FrameLayout
+        android:id="@+id/control_button_frame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/progressBar"
+        android:layout_alignEnd="@+id/progressBar"
+        android:layout_alignLeft="@+id/progressBar"
+        android:layout_alignRight="@+id/progressBar"
+        android:layout_alignStart="@+id/progressBar"
+        android:layout_alignTop="@+id/progressBar"
+        android:layout_margin="8dp"
+        android:layout_gravity="center"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@+id/roundedbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/roundedbutton_download" />
+
+        <ImageButton
+            android:id="@+id/control_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_download_blue" />
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/downloading_audio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal">
+
+        <SeekBar
+            android:id="@+id/seek_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="40dp"
+            android:layout_marginLeft="43dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginStart="43dp"
+            android:maxHeight="3dp"
+            android:minHeight="3dp"
+            android:progressDrawable="@drawable/seek_bar"
+            android:thumb="@drawable/seek_bar_thumb" />
+
+        <TextView
+            android:id="@+id/duration"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="1:45"
+            android:textColor="@color/audio_duration" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
